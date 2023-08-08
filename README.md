@@ -1,7 +1,7 @@
 ## App: Rafaela-nail-design
 
 ### Techs:
-- **Reactjs**, **Typescript**, **Next-app**, **Styled-components**, **Hooks**;
+- **Reactjs**, **Typescript**, **Next-app**, **Stitches**, **Hooks**;
 
 ## 📁 Project
 

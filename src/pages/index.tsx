@@ -24,8 +24,9 @@ export default function Home() {
         priority
       />
 
-      <Link href="/clients" title="Ir para página clientes">
-        <CaretRight size={22} weight="bold" color="#121214" />
+      <Link href="/services" title="Ir para página clientes">
+        Serviços
+        <CaretRight size={20} weight="bold" color="#121214" />
       </Link>
     </HomeContainer>
   )

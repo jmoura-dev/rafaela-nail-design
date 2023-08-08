@@ -51,9 +51,14 @@ export const HomeContainer = styled('div', {
 
   '> a': {
     display: 'flex',
+    alignItems: 'center',
     position: 'absolute',
     top: '10%',
     right: '10%',
+    fontFamily: 'Pacifico',
+    fontSize: '0.875rem',
+    textDecoration: 'none',
+    color: '$gray600',
 
     '&:hover': {
       backgroundColor: '$pink500',
