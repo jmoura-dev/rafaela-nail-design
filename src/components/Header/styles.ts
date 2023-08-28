@@ -45,6 +45,7 @@ export const HeaderContent = styled('div', {
     button: {
       border: 'none',
       background: 'none',
+      cursor: 'pointer',
     },
 
     ul: {
