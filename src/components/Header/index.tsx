@@ -30,16 +30,24 @@ export function Header() {
             </button>
             <ul>
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/" onClick={handleOpenMenu}>
+                  Início
+                </Link>
               </li>
               <li>
-                <Link href="/clients">Clientes</Link>
+                <Link href="/clients" onClick={handleOpenMenu}>
+                  Clientes
+                </Link>
               </li>
               <li>
-                <Link href="/services">Serviços</Link>
+                <Link href="/services" onClick={handleOpenMenu}>
+                  Serviços
+                </Link>
               </li>
               <li>
-                <Link href="/contact">Contatos</Link>
+                <Link href="/contacts" onClick={handleOpenMenu}>
+                  Contatos
+                </Link>
               </li>
             </ul>
           </nav>
@@ -47,7 +55,7 @@ export function Header() {
         <div>
           <AboutContainer>
             <strong>Rafaela</strong>
-            <span>Nail Design</span>
+            <span>Nail Designer</span>
           </AboutContainer>
           <Image src={logo} width={70} height={60} alt="Imagem do logo" />
         </div>
