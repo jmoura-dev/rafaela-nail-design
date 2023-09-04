@@ -11,6 +11,20 @@ export const ClientsContainer = styled('div', {
   margin: '2rem auto',
   gap: '1rem',
   textAlign: 'center',
+  width: '100%',
+  padding: '0 1rem',
 
   animation: `${lowOpacity} 0.4s linear`,
+
+  a: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'end',
+    fontSize: '$pq',
+    listStyle: 'none',
+    appearance: 'none',
+    textDecoration: 'none',
+    color: '$gray700',
+    marginBottom: '2rem',
+  },
 })
