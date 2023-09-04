@@ -1,4 +1,9 @@
-import { styled } from '..'
+import { styled, keyframes } from '..'
+
+const lowOpacity = keyframes({
+  '0%': { opacity: '0' },
+  '100%': { opacity: '1' },
+})
 
 export const ContactsContainer = styled('div', {
   display: 'flex',
@@ -9,6 +14,7 @@ export const ContactsContainer = styled('div', {
   margin: '0 auto',
   width: '100%',
   height: '100%',
+  animation: `${lowOpacity} 0.4s linear`,
 
   '> p': {
     display: 'flex',

@@ -1,4 +1,9 @@
-import { styled } from '..'
+import { styled, keyframes } from '..'
+
+const lowOpacity = keyframes({
+  '0%': { opacity: '0' },
+  '100%': { opacity: '1' },
+})
 
 export const HomeContainer = styled('div', {
   display: 'flex',
@@ -8,6 +13,7 @@ export const HomeContainer = styled('div', {
   maxWidth: 1280,
   margin: '0 auto',
   position: 'relative',
+  animation: `${lowOpacity} 0.4s linear`,
 
   header: {
     borderBottom: '1px solid $blue300',

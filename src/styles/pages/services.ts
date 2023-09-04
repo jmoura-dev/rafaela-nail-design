@@ -1,4 +1,9 @@
-import { styled } from '..'
+import { keyframes, styled } from '..'
+
+const lowOpacity = keyframes({
+  '0%': { opacity: '0' },
+  '100%': { opacity: '1' },
+})
 
 export const ServicesContainer = styled('div', {
   display: 'flex',
@@ -9,6 +14,7 @@ export const ServicesContainer = styled('div', {
   overflowY: 'auto',
   margin: '0 auto',
   width: '100%',
+  animation: `${lowOpacity} 0.4s linear`,
 
   h1: {
     fontFamily: 'Roboto',
