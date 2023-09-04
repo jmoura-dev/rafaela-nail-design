@@ -20,6 +20,7 @@ export const ClientsContainer = styled('div', {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'end',
+    fontFamily: 'Pacifico',
     fontSize: '$pq',
     listStyle: 'none',
     appearance: 'none',
