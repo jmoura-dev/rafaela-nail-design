@@ -9,6 +9,16 @@ export const HomeContainer = styled('div', {
   margin: '0 auto',
   position: 'relative',
 
+  header: {
+    borderBottom: '1px solid $blue300',
+    marginBottom: '1rem',
+
+    'img:nth-child(1)': {
+      margin: '0 auto 1rem',
+      boxShadow: 'rgb(0, 0, 0) 0px 20px 40px -10px',
+    },
+  },
+
   main: {
     display: 'flex',
     flexDirection: 'column',
@@ -45,15 +55,13 @@ export const HomeContainer = styled('div', {
     marginTop: '-4rem',
     borderRadius: '50%',
     objectFit: 'cover',
-    width: '16rem',
-    height: '16rem',
   },
 
   '> a': {
     display: 'flex',
     alignItems: 'center',
     position: 'absolute',
-    top: '10%',
+    top: '25%',
     right: '10%',
     fontFamily: 'Pacifico',
     fontSize: '0.875rem',

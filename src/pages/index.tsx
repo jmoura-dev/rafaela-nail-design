@@ -4,9 +4,20 @@ import imageHome from '../assets/imageHome.png'
 import Link from 'next/link'
 import { CaretRight } from 'phosphor-react'
 
+import rafaImg from '../assets/rafa.png'
+
 export default function Home() {
   return (
     <HomeContainer>
+      <header>
+        <Image
+          src={rafaImg}
+          alt="imagem da designer Rafaela"
+          width={80}
+          height={80}
+        />
+      </header>
+
       <main>
         <h1>Quem sou ?</h1>
         <p>
