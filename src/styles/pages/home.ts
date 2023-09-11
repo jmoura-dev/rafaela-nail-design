@@ -5,12 +5,11 @@ const lowOpacity = keyframes({
   '100%': { opacity: '1' },
 })
 
-export const HomeContainer = styled('div', {
+export const HomeContainerMobile = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   padding: '0.5rem 1rem',
   width: '100%',
-  maxWidth: 1280,
   margin: '0 auto',
   position: 'relative',
   animation: `${lowOpacity} 0.4s linear`,
@@ -77,6 +76,51 @@ export const HomeContainer = styled('div', {
     '&:hover': {
       backgroundColor: '$pink500',
       borderRadius: 6,
+    },
+  },
+})
+
+export const HomeContainerDesktop = styled('div', {
+  display: 'grid',
+  gridTemplateColumns: '40% 60%',
+  padding: '1rem 2rem',
+  maxWidth: 1280,
+  margin: '0 auto',
+  height: 740,
+
+  '> img': {
+    display: 'flex',
+    margin: '0 auto',
+    borderRadius: '0 8px 8px 0',
+    objectFit: 'cover',
+    width: '100%',
+  },
+
+  '> div:first-child': {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'start',
+    justifyContent: 'start',
+    backgroundColor: '$blue700',
+    padding: '1rem',
+    borderRadius: '8px 0 0 8px',
+
+    img: {
+      display: 'flex',
+      margin: '0 auto',
+      borderRadius: '50%',
+      objectFit: 'cover',
+      maxWidth: 320,
+    },
+
+    h1: {
+      display: 'flex',
+      margin: '1rem auto',
+    },
+
+    p: {
+      margin: '2rem auto',
+      fontSize: '$md',
     },
   },
 })

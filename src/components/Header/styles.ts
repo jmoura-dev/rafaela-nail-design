@@ -13,13 +13,12 @@ export const HeaderContainer = styled('header', {
   background: 'linear-gradient(180deg, #EA4A92 0%, #C24D81 100%)',
 })
 
-export const HeaderContent = styled('div', {
+export const HeaderContentMobile = styled('div', {
   display: 'flex',
   alignItems: 'center',
   width: '100%',
   margin: '0 auto',
   justifyContent: 'space-around',
-  maxWidth: 1280,
   position: 'relative',
 
   '> button': {
@@ -80,6 +79,56 @@ export const HeaderContent = styled('div', {
     fontFamily: 'Pacifico, sans-serif',
     color: '$gray300',
     gap: '0.3rem',
+  },
+})
+
+export const HeaderContentDesktop = styled('header', {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-around',
+  width: '100%',
+  margin: '0 auto',
+  maxWidth: 1280,
+  position: 'relative',
+  padding: '0 1rem',
+  gap: '6rem',
+
+  nav: {
+    maxWidth: 600,
+    width: '100%',
+  },
+
+  ul: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    margin: '0 auto',
+  },
+
+  'ul li': {
+    listStyle: 'none',
+    textDecoration: 'none',
+
+    a: {
+      textDecoration: 'none',
+      fontFamily: 'Roboto',
+      fontWeight: 'bold',
+      fontSize: '$md',
+      color: '$gray300',
+    },
+  },
+
+  div: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    background: 'linear-gradient(180deg, #6A9CDE 0%, #F28DB2 100%)',
+    padding: '0.2rem 1rem',
+    borderRadius: '20px 0',
+    fontFamily: 'Pacifico, sans-serif',
+    color: '$gray300',
+    gap: '0.3rem',
+    minWidth: 220,
   },
 })
 

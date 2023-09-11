@@ -34,6 +34,7 @@ export const ContactsContainer = styled('div', {
     objectFit: 'cover',
     width: '100%',
     marginTop: '1rem',
+    padding: '0.5rem',
   },
 
   main: {
