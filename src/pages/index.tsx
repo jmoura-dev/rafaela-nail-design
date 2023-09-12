@@ -5,14 +5,15 @@ import Link from 'next/link'
 import { CaretRight } from 'phosphor-react'
 
 import rafaDesktop from '../assets/rafaDesktop.png'
-import imgHome from '../assets/imgHome.png'
+import imgService1 from '../assets/service1.png'
+import imgService2 from '../assets/service2.png'
+import imgService3 from '../assets/service3.png'
 
 import { useContext } from 'react'
 import { ScreenSizeContext } from '@/contexts/screenSizeContext'
 
 export default function Home() {
   const { isScreenMobile } = useContext(ScreenSizeContext)
-  console.log(isScreenMobile)
 
   return (
     <>
@@ -68,12 +69,29 @@ export default function Home() {
               todos os dias.
             </p>
           </div>
-          <Image
-            src={imgHome}
-            alt="Imagem de logo da home"
-            width={600}
-            height={750}
-          />
+
+          <div>
+            <Image
+              src={imgService1}
+              alt="Imagem de demostração número 1"
+              width={400}
+              height={370}
+            />
+
+            <Image
+              src={imgService2}
+              alt="Imagem de demostração número 2"
+              width={400}
+              height={370}
+            />
+
+            <Image
+              src={imgService3}
+              alt="Imagem de demostração número 3"
+              width={400}
+              height={370}
+            />
+          </div>
         </HomeContainerDesktop>
       )}
     </>

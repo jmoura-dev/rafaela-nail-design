@@ -43,15 +43,16 @@ export function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/clients" onClick={handleOpenMenu}>
-                    Clientes
-                  </Link>
-                </li>
-                <li>
                   <Link href="/services" onClick={handleOpenMenu}>
                     Serviços
                   </Link>
                 </li>
+                <li>
+                  <Link href="/clients" onClick={handleOpenMenu}>
+                    Clientes
+                  </Link>
+                </li>
+
                 <li>
                   <Link href="/contacts" onClick={handleOpenMenu}>
                     Contatos
@@ -78,13 +79,13 @@ export function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/clients" onClick={handleOpenMenu}>
-                  Clientes
+                <Link href="/services" onClick={handleOpenMenu}>
+                  Serviços
                 </Link>
               </li>
               <li>
-                <Link href="/services" onClick={handleOpenMenu}>
-                  Serviços
+                <Link href="/clients" onClick={handleOpenMenu}>
+                  Clientes
                 </Link>
               </li>
               <li>

@@ -1,26 +1,39 @@
 import { ContactsContainer } from '@/styles/pages/contacts'
 import Image from 'next/image'
 
-import EsmalteImg from '../assets/imgEsmalte.png'
+import EsmalteImg from '../assets/Esmalte.png'
 import {
   EnvelopeSimple,
   InstagramLogo,
   Palette,
   WhatsappLogo,
 } from 'phosphor-react'
+import { useContext } from 'react'
+import { ScreenSizeContext } from '@/contexts/screenSizeContext'
 
 export default function Contacts() {
+  const { isScreenMobile } = useContext(ScreenSizeContext)
+
   return (
     <ContactsContainer>
-      <Image
-        src={EsmalteImg}
-        height={140}
-        width={300}
-        alt="imagem de esmaltes"
-      />
+      {isScreenMobile ? (
+        <Image
+          src={EsmalteImg}
+          height={140}
+          width={300}
+          alt="imagem de esmaltes"
+        />
+      ) : (
+        <Image
+          src={EsmalteImg}
+          height={250}
+          width={900}
+          alt="imagem de esmaltes"
+        />
+      )}
 
       <p>
-        <Palette size={25} />
+        <Palette size={isScreenMobile ? 25 : 30} />
         Expressão de Estilo: Unhas que Falam por Você.
       </p>
 

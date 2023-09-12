@@ -9,10 +9,10 @@ export const ClientsContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   margin: '2rem auto',
-  gap: '1rem',
   textAlign: 'center',
   width: '100%',
   padding: '0 1rem',
+  maxWidth: 1280,
 
   animation: `${lowOpacity} 0.4s linear`,
 
@@ -28,4 +28,68 @@ export const ClientsContainer = styled('div', {
     color: '$gray700',
     marginBottom: '2rem',
   },
+
+  '> h2': {
+    borderBottom: '1px solid $blue700',
+    paddingBottom: '0.5rem',
+    marginBottom: '0.5rem',
+    color: '$gray300',
+  },
+
+  '> footer': {
+    backgroundColor: '$pink300',
+    padding: '1rem',
+    borderRadius: 8,
+    textAlign: 'center',
+    marginTop: '2rem',
+    boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;',
+    transition: 'scale 0.2s ease',
+
+    p: {
+      fontSize: '$pq',
+      color: '$gray700',
+    },
+  },
+})
+
+export const NavigationContainer = styled('div', {
+  display: 'flex',
+  justifyContent: 'space-between',
+  marginBottom: '0.5rem',
+
+  a: {
+    display: 'flex',
+    alignItems: 'center',
+    fontFamily: 'Pacifico',
+    fontSize: '0.875rem',
+    textDecoration: 'none',
+    color: '$gray600',
+
+    '&:hover': {
+      backgroundColor: '$pink500',
+      borderRadius: 6,
+    },
+  },
+})
+
+export const MainMobile = styled('main', {
+  display: 'flex',
+  gap: '1rem',
+  maxWidth: 300,
+  flexWrap: 'nowrap',
+  overflowX: 'auto',
+  margin: '0 auto',
+  minHeight: 290,
+
+  img: {
+    borderRadius: 8,
+  },
+})
+
+export const SectionContainer = styled('section', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  gap: '0.5rem',
 })

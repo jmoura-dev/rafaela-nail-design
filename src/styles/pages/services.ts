@@ -25,34 +25,12 @@ export const ServicesContainer = styled('div', {
     width: '6rem',
   },
 
-  '> main': {
-    display: 'flex',
-    gap: '1rem',
-    maxWidth: 300,
-    flexWrap: 'nowrap',
-    overflowX: 'auto',
-    margin: '0 auto',
-    minHeight: 300,
-
-    span: {
-      fontFamily: 'Pacifico',
-      fontSize: '$pq',
-      fontWeight: 'bold',
-      color: '$blue700',
-    },
-
-    img: {
-      borderRadius: '5rem 0 5rem 0',
-      border: '1px solid $blue500',
-    },
-  },
-
   footer: {
     backgroundColor: '$pink300',
     padding: '1rem',
     borderRadius: 8,
     textAlign: 'center',
-    marginTop: '0.7rem',
+    marginTop: '3.5rem',
     boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;',
     transition: 'scale 0.2s ease',
 
@@ -68,6 +46,113 @@ export const ServicesContainer = styled('div', {
       textDecoration: 'none',
       color: '$gray700',
     },
+  },
+})
+
+export const MainMobile = styled('main', {
+  display: 'flex',
+  gap: '1rem',
+  maxWidth: 300,
+  flexWrap: 'nowrap',
+  overflowX: 'auto',
+  margin: '0 auto',
+  minHeight: 300,
+
+  span: {
+    fontFamily: 'Pacifico',
+    fontSize: '$pq',
+    fontWeight: 'bold',
+    color: '$blue700',
+  },
+
+  img: {
+    borderRadius: '5rem 0 5rem 0',
+    border: '1px solid $blue500',
+  },
+})
+
+export const MainDesktop = styled('main', {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: '100%',
+  margin: '0 auto',
+  overflow: 'auto',
+  padding: '5rem 0 0 0',
+
+  '&::-webkit-scrollbar': {
+    backgroundColor: 'none',
+    width: '0.7rem',
+  },
+
+  '&::-webkit-scrollbar-thumb': {
+    backgroundColor: '$pink500',
+    borderRadius: '1rem',
+  },
+
+  '> div:nth-child(1)': {
+    position: 'relative',
+    width: '100%',
+    borderRight: '1px solid #000',
+    height: 550,
+
+    '> section:nth-child(1)': {
+      position: 'absolute',
+      top: '0',
+      right: '0',
+
+      img: {
+        borderRadius: '0 0 0 6rem',
+      },
+    },
+
+    '> section:nth-child(2)': {
+      position: 'absolute',
+      bottom: '0',
+      right: 0,
+
+      img: {
+        borderRadius: '0 0 0 6rem',
+      },
+    },
+  },
+
+  '> div:nth-child(2)': {
+    position: 'relative',
+    width: '100%',
+    height: 550,
+
+    span: {
+      display: 'flex',
+      flexDirection: 'row-reverse',
+    },
+
+    '> section:nth-child(1)': {
+      position: 'absolute',
+      top: '18%',
+      left: 0,
+
+      img: {
+        borderRadius: '0 0 6rem 0',
+      },
+    },
+
+    '> section:nth-child(2)': {
+      position: 'absolute',
+      bottom: '-20%',
+      left: 0,
+
+      img: {
+        borderRadius: '0 0 6rem 0',
+      },
+    },
+  },
+
+  span: {
+    fontFamily: 'Pacifico',
+    fontSize: '$pq',
+    fontWeight: 'bold',
+    color: '$blue700',
   },
 })
 

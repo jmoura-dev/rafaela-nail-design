@@ -28,26 +28,40 @@ export const ContactsContainer = styled('div', {
     fontFamily: 'Pacifico',
     fontWeight: '400',
     color: '$blue700',
+
+    '@media (min-width: 700px)': {
+      fontSize: '$lg',
+      alignItems: 'center',
+    },
   },
 
   img: {
-    objectFit: 'cover',
     width: '100%',
+    objectFit: 'cover',
     marginTop: '1rem',
     padding: '0.5rem',
+    borderRadius: '0.8rem',
   },
 
   main: {
     display: 'flex',
+    width: '100%',
     padding: '1rem',
     gap: '1rem',
-    marginTop: '1rem',
+    margin: '1rem auto 0',
 
     section: {
       display: 'flex',
       flexDirection: 'column',
+      alignItems: 'center',
       width: '100%',
       gap: '0.5rem',
+      borderRadius: 6,
+
+      '@media (min-width: 700px)': {
+        background: 'linear-gradient(to left, #F28DB2 20%, #A0C5F7 100%)',
+        padding: '1rem',
+      },
 
       h2: {
         fontFamily: 'Baloo2',
@@ -58,6 +72,12 @@ export const ContactsContainer = styled('div', {
         width: '8rem',
         color: '$blue700',
         borderBottom: '1px solid $blue500',
+
+        '@media (min-width: 700px)': {
+          fontSize: '1.8rem',
+          alignItems: 'center',
+          width: '9rem',
+        },
       },
 
       span: {
@@ -67,6 +87,10 @@ export const ContactsContainer = styled('div', {
         fontFamily: 'Roboto',
         fontSize: '$pq',
         color: '$gray500',
+
+        '@media (min-width: 700px)': {
+          fontSize: '$md',
+        },
       },
 
       'a:nth-child(2)': {
@@ -86,6 +110,10 @@ export const ContactsContainer = styled('div', {
 
         '&:hover': {
           scale: 1.1,
+        },
+
+        '@media (min-width: 700px)': {
+          fontSize: '$md',
         },
       },
 
@@ -107,6 +135,16 @@ export const ContactsContainer = styled('div', {
         '&:hover': {
           scale: 1.1,
         },
+
+        '@media (min-width: 700px)': {
+          fontSize: '$md',
+        },
+      },
+    },
+
+    'section:nth-child(2)': {
+      '@media (min-width: 700px)': {
+        background: 'linear-gradient(to right, #F28DB2 20%, #A0C5F7 100%)',
       },
     },
   },

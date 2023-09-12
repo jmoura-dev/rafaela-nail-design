@@ -115,6 +115,10 @@ export const HeaderContentDesktop = styled('header', {
       fontWeight: 'bold',
       fontSize: '$md',
       color: '$gray300',
+
+      '&:hover': {
+        color: '$gray400',
+      },
     },
   },
 

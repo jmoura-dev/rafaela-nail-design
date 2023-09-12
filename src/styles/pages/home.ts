@@ -5,6 +5,21 @@ const lowOpacity = keyframes({
   '100%': { opacity: '1' },
 })
 
+const slideFirstImage = keyframes({
+  '0%, 100%': { opacity: 0 },
+  '50%': { opacity: '1' },
+})
+
+const slideSecondImage = keyframes({
+  '0%, 100%': { opacity: 0 },
+  '50%': { opacity: '1' },
+})
+
+const slideThirdImage = keyframes({
+  '0%, 100%': { opacity: 0 },
+  '50%': { opacity: '1' },
+})
+
 export const HomeContainerMobile = styled('div', {
   display: 'flex',
   flexDirection: 'column',
@@ -88,20 +103,10 @@ export const HomeContainerDesktop = styled('div', {
   margin: '0 auto',
   height: 740,
 
-  '> img': {
-    display: 'flex',
-    margin: '0 auto',
-    borderRadius: '0 8px 8px 0',
-    objectFit: 'cover',
-    width: '100%',
-  },
-
   '> div:first-child': {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'start',
-    justifyContent: 'start',
-    backgroundColor: '$blue700',
+    background: 'linear-gradient(to bottom, #3E5F8A 0%, #F28DB2 100%)',
     padding: '1rem',
     borderRadius: '8px 0 0 8px',
 
@@ -121,6 +126,40 @@ export const HomeContainerDesktop = styled('div', {
     p: {
       margin: '2rem auto',
       fontSize: '$md',
+    },
+  },
+
+  'div:nth-child(2)': {
+    position: 'relative',
+
+    img: {
+      position: 'absolute',
+      display: 'flex',
+      margin: '0 auto',
+      borderRadius: '0 8px 8px 0',
+      objectFit: 'cover',
+    },
+
+    '> img:nth-child(1)': {
+      objectFit: 'cover',
+      top: '0',
+      left: '0',
+      animation: `${slideFirstImage} 9s linear infinite`,
+    },
+
+    '> img:nth-child(2)': {
+      objectFit: 'cover',
+      top: '20%',
+      right: '0',
+      borderRadius: 8,
+      animation: `${slideSecondImage} 9s linear infinite 3s`,
+    },
+
+    '> img:nth-child(3)': {
+      objectFit: 'cover',
+      bottom: '0',
+      left: '0',
+      animation: `${slideThirdImage} 9s linear infinite 6s`,
     },
   },
 })
