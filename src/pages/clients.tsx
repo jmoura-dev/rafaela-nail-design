@@ -83,16 +83,61 @@ export default function Clients() {
               />
             </SectionContainer>
           </MainMobile>
-          <footer>
-            <p>
-              Seu feedback é a nossa inspiração! Valorizamos cada opinião para
-              criar unhas que refletem sua personalidade única.
-            </p>
-          </footer>
         </>
       ) : (
-        <p>tem nada</p>
+        <MainMobile>
+          <SectionContainer>
+            <Image
+              src={imgService1}
+              width={200}
+              height={150}
+              alt="imagem do serviço prestado"
+            />
+            <Image
+              src={feedback1}
+              width={200}
+              height={100}
+              alt="feedback do cliente"
+            />
+          </SectionContainer>
+
+          <SectionContainer>
+            <Image
+              src={imgService2}
+              width={200}
+              height={150}
+              alt="imagem do serviço prestado"
+            />
+            <Image
+              src={feedback2}
+              width={200}
+              height={100}
+              alt="feedback do cliente"
+            />
+          </SectionContainer>
+
+          <SectionContainer>
+            <Image
+              src={imgService3}
+              width={200}
+              height={150}
+              alt="imagem do serviço prestado"
+            />
+            <Image
+              src={feedback3}
+              width={200}
+              height={100}
+              alt="feedback do cliente"
+            />
+          </SectionContainer>
+        </MainMobile>
       )}
+      <footer>
+        <p>
+          Seu feedback é a nossa inspiração! Valorizamos cada opinião para criar
+          unhas que refletem sua personalidade única.
+        </p>
+      </footer>
     </ClientsContainer>
   )
 }
