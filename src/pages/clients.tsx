@@ -2,6 +2,7 @@ import {
   ClientsContainer,
   NavigationContainer,
   MainMobile,
+  MainDesktop,
   SectionContainer,
 } from '@/styles/pages/clients'
 import { CaretLeft, CaretRight } from 'phosphor-react'
@@ -85,18 +86,18 @@ export default function Clients() {
           </MainMobile>
         </>
       ) : (
-        <MainMobile>
+        <MainDesktop>
           <SectionContainer>
             <Image
               src={imgService1}
-              width={200}
-              height={150}
+              width={300}
+              height={200}
               alt="imagem do serviço prestado"
             />
             <Image
               src={feedback1}
-              width={200}
-              height={100}
+              width={300}
+              height={120}
               alt="feedback do cliente"
             />
           </SectionContainer>
@@ -104,14 +105,14 @@ export default function Clients() {
           <SectionContainer>
             <Image
               src={imgService2}
-              width={200}
-              height={150}
+              width={300}
+              height={200}
               alt="imagem do serviço prestado"
             />
             <Image
               src={feedback2}
-              width={200}
-              height={100}
+              width={300}
+              height={120}
               alt="feedback do cliente"
             />
           </SectionContainer>
@@ -119,18 +120,18 @@ export default function Clients() {
           <SectionContainer>
             <Image
               src={imgService3}
-              width={200}
-              height={150}
+              width={300}
+              height={200}
               alt="imagem do serviço prestado"
             />
             <Image
               src={feedback3}
-              width={200}
-              height={100}
+              width={300}
+              height={120}
               alt="feedback do cliente"
             />
           </SectionContainer>
-        </MainMobile>
+        </MainDesktop>
       )}
       <footer>
         <p>

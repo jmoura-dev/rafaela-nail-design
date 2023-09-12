@@ -81,6 +81,47 @@ export const MainMobile = styled('main', {
   margin: '0 auto',
   minHeight: 290,
 
+  '&::-webkit-scrollbar': {
+    backgroundColor: 'none',
+    width: '0.7rem',
+    height: '0.5rem',
+  },
+
+  '&::-webkit-scrollbar-thumb': {
+    backgroundColor: '$pink500',
+    borderRadius: '1rem',
+  },
+
+  '@media (min-width: 700px)': {
+    minHeight: 390,
+    maxWidth: 600,
+  },
+
+  img: {
+    borderRadius: 8,
+  },
+})
+
+export const MainDesktop = styled('main', {
+  display: 'flex',
+  gap: '1rem',
+  maxWidth: 600,
+  flexWrap: 'nowrap',
+  overflowX: 'auto',
+  margin: '0 auto',
+  minHeight: 390,
+
+  '&::-webkit-scrollbar': {
+    backgroundColor: 'none',
+    width: '0.7rem',
+    height: '0.5rem',
+  },
+
+  '&::-webkit-scrollbar-thumb': {
+    backgroundColor: '$pink500',
+    borderRadius: '1rem',
+  },
+
   img: {
     borderRadius: 8,
   },
