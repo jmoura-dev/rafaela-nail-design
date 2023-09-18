@@ -17,6 +17,8 @@ import imgService3 from '../assets/service3.png'
 import feedback1 from '../assets/feedback1.png'
 import feedback2 from '../assets/feedback2.png'
 import feedback3 from '../assets/feedback3.png'
+import infantil from '../assets/infantil.png'
+import pes from '../assets/pes.png'
 
 export default function Clients() {
   const { isScreenMobile } = useContext(ScreenSizeContext)
@@ -83,6 +85,24 @@ export default function Clients() {
                 alt="feedback do cliente"
               />
             </SectionContainer>
+
+            <SectionContainer>
+              <Image
+                src={infantil}
+                width={200}
+                height={220}
+                alt="imagem do serviço prestado"
+              />
+            </SectionContainer>
+
+            <SectionContainer>
+              <Image
+                src={pes}
+                width={200}
+                height={220}
+                alt="imagem do serviço prestado"
+              />
+            </SectionContainer>
           </MainMobile>
         </>
       ) : (
@@ -129,6 +149,24 @@ export default function Clients() {
               width={300}
               height={120}
               alt="feedback do cliente"
+            />
+          </SectionContainer>
+
+          <SectionContainer>
+            <Image
+              src={infantil}
+              width={300}
+              height={300}
+              alt="imagem do serviço prestado"
+            />
+          </SectionContainer>
+
+          <SectionContainer>
+            <Image
+              src={pes}
+              width={300}
+              height={300}
+              alt="imagem do serviço prestado"
             />
           </SectionContainer>
         </MainDesktop>
