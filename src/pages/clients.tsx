@@ -19,6 +19,8 @@ import feedback2 from '../assets/feedback2.png'
 import feedback3 from '../assets/feedback3.png'
 import infantil from '../assets/infantil.png'
 import pes from '../assets/pes.png'
+import imgCarousel1 from '../assets/imageCarousel1.png'
+import imgCarousel2 from '../assets/imageCarousel2.png'
 
 export default function Clients() {
   const { isScreenMobile } = useContext(ScreenSizeContext)
@@ -103,6 +105,24 @@ export default function Clients() {
                 alt="imagem do serviço prestado"
               />
             </SectionContainer>
+
+            <SectionContainer>
+              <Image
+                src={imgCarousel1}
+                width={200}
+                height={220}
+                alt="imagem do serviço prestado"
+              />
+            </SectionContainer>
+
+            <SectionContainer>
+              <Image
+                src={imgCarousel2}
+                width={200}
+                height={220}
+                alt="imagem do serviço prestado"
+              />
+            </SectionContainer>
           </MainMobile>
         </>
       ) : (
@@ -164,6 +184,24 @@ export default function Clients() {
           <SectionContainer>
             <Image
               src={pes}
+              width={300}
+              height={300}
+              alt="imagem do serviço prestado"
+            />
+          </SectionContainer>
+
+          <SectionContainer>
+            <Image
+              src={imgCarousel1}
+              width={300}
+              height={300}
+              alt="imagem do serviço prestado"
+            />
+          </SectionContainer>
+
+          <SectionContainer>
+            <Image
+              src={imgCarousel2}
               width={300}
               height={300}
               alt="imagem do serviço prestado"

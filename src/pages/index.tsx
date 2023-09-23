@@ -7,7 +7,7 @@ import { CaretRight } from 'phosphor-react'
 import rafaDesktop from '../assets/rafaDesktop.png'
 import imgService1 from '../assets/service1.png'
 import imgService2 from '../assets/service2.png'
-import imgService3 from '../assets/service3.png'
+import infantil from '../assets/infantil.png'
 
 import { useContext } from 'react'
 import { ScreenSizeContext } from '@/contexts/screenSizeContext'
@@ -86,7 +86,7 @@ export default function Home() {
             />
 
             <Image
-              src={imgService3}
+              src={infantil}
               alt="Imagem de demostração número 3"
               width={400}
               height={370}
